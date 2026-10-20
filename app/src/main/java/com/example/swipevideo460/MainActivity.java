@@ -29,11 +29,28 @@ public class MainActivity extends AppCompatActivity {
 
         final ViewPager2 videoViewPager = findViewById(R.id.videosViewPager);
         List<VideoItem> videoItemsList = new ArrayList<>();
-        VideoItem videoCelebration = new VideoItem();
-        videoCelebration.videoURL = "x";
-        videoCelebration.videoTitle = "Celebration";
-        videoCelebration.videoDescription = "Celebration who you are in you deepes heart";
-        videoItemsList.add(videoCelebration);
+        VideoItem resonators = new VideoItem();
+        resonators.videoURL ="https://github.com/cwuDino/myVideos/raw/refs/heads/main/Same%20deck%20%23yugioh_Zetafit%20Gaming%20-%20Master%20Duel%20Links_Y8kZi_6E_Vw.mp4";
+        resonators.videoTitle = "Resonator vs Resonator";
+        resonators.videoDescription = "I'm the better master of faster" ;
+
+        VideoItem theClashOfTheGods = new VideoItem();
+        theClashOfTheGods.videoURL ="https://github.com/cwuDino/myVideos/raw/refs/heads/main/Who%20Would%20Win%EF%BC%9A%20Exodia%20or%20Obelisk%EF%BC%9F_NerdFainter_qZAtQv0doK0.mp4";
+        theClashOfTheGods.videoTitle = "Exodia vs Oblelisk";
+        theClashOfTheGods.videoDescription = "Who would win in a fight?" ;
+
+        VideoItem exodiaIsWrath = new VideoItem();
+        exodiaIsWrath.videoURL ="https://github.com/cwuDino/myVideos/raw/refs/heads/main/Yugi%20summons%20EXODIA%20%23yugioh%20%23anime%20%23exodia_Prime%20Video%20AU%20&%20NZ_B3JvIftKIjo.mp4";
+        exodiaIsWrath.videoTitle = "Exodia";
+        exodiaIsWrath.videoDescription = "The unstopable exodia";
+
+
+
+        videoItemsList.add(resonators);
+        videoItemsList.add(theClashOfTheGods);
+        videoItemsList.add(exodiaIsWrath);
+
+
 
         videoViewPager.setAdapter(new VideoAdapter(videoItemsList));
     }
